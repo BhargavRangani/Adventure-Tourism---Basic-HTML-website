@@ -1,0 +1,180 @@
+<html>
+<head>
+<style>
+*{
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0px 80px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: #33cccc;
+}
+img {
+  border-radius: 8%;
+}
+</style>
+</head>
+<body background="bg.png">
+<div class="topnav">
+<h2>
+<center> <img src="logo.png" style="width:50%"> </center> <br>
+
+
+<ul>
+  <li><a class="active" href="Home.html">Home</a></li>
+  <li><a href="Trips.html">Trips Schedule</a></li>
+  <li><a href="About.html">About Course</a></li>
+  <li><a href="Contact.html">Contact Us</a></li>
+</ul>
+  
+</div>
+<section>
+ <center>
+  <img class="pic" src="mount.jpg"
+  style="width:70%">
+  <img class="pic" src="ocean.jpg"
+  style="width:70%">
+  <img class="pic" src="desert.jpg"
+  style="width:70%">
+ </center>
+</section>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("pic");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 4000);
+}
+</script>
+<br>
+<br>
+<br>
+<br>
+<center><b><u><font size=22px> Adventures</font></u></b></n>
+<h2>All Over The Nation</h2>
+<p><h3> Camping in India
+If this holiday season, you wish to relax in the lap of the nature and want to enjoy in the wilderness, then camping in India sounds as the best idea. With its scenic environs and serene atmosphere, the country provides several hideouts from the chaotic city life. The thrilling and beautiful terrains of the Himalayas and Western Ghats present a perfect set-up for this activity. Not only mountainous regions, but the deserts and wildlife parks of India also offer an unforgettable experience. The breathtaking treks at places like Uttarakhand, Himachal, Maharashtra, West Bengal and Kerala are sure to attract you if you wish to explore the nature.</h3></p>
+
+<section>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Mountain Climbing</h3>
+	  <img src="everest.jpg"
+  style="width:100%">
+      <p>Everest Mountain climbing at 4000 metres</p>
+      <p>Duration: 7 days</p>
+	  <a href="registration.html"><button>Apply Now</button></a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Hot Air Balloon</h3>
+      <img src="jaipur.jpg"
+  style="width:100%">
+      <p>Full city view of jaipur on hot air balloon </p>
+      <p>Duration: 3 hours</p>
+	  <a href="registration.html"><button>Apply Now</button></a>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>River Rafting</h3>
+	  <img src="Chadar_shutterstock.jpg"
+  style="width:100%">
+      <p>Chadar shutterstock frozen river tracking</p>
+      <p>Duration: 4 days</p>
+	  <a href="registration.html"><button>Apply Now</button></a>
+    </div>
+  </div>
+  
+   <div class="column">
+    <div class="card">
+      <h3>Scooba Diving</h3>
+	  <img src="goa.jpg"
+  style="width:100%">
+      <p>Under Water diving at Goa </p>
+      <p>Duration: 4 hours</p>
+	  <a href="registration.html"><button>Apply Now</button></a>
+    </div>
+  </div>
+</div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<footer> <h3>
+  <a href="https://twitter.com/login">Twitter</a> &nbsp;&nbsp;
+  <a href="https://in.pinterest.com/">Pintrest</a> &nbsp;&nbsp;
+  <a href="https://www.instagram.com/accounts/login/">Instagram</a> &nbsp;&nbsp;
+  <a href="https://in.linkedin.com/">Linkedin</a> </h3>
+  <p>
+  Contact Us : 00000 00000     /     11111 11111  <br>
+			    &nbsp;&nbsp;&nbsp;&nbsp;abc@gmail.com <br>
+			   <br>
+			   
+	Designed by <a> Bhargav Rangani </a>
+  </p>
+</footer>
+</body>
+</html>
